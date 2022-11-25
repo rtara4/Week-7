@@ -1,14 +1,16 @@
-# Week-7
-f = open('marks.txt','wt')
-mark = []
-total = 0
-student_marks = int(input('Enter Number of student marks: '))
+#test1#
+import random 
 
-print("Enter Marks Obtained in " + str(student_marks) + " Subjects: ")
-for student in range(student_marks):
-    mark.append(input()) 
-print(mark)
-string = ','.join(mark)
-print(string)
-f.write(string)
-f.close()
+inspirational_quote = [] 
+
+f = open('inspirationalquotes.txt','rt') 
+
+for quote in f: 
+
+    inspirational_quote.append(quote) 
+
+f.close() 
+
+print('inspirational quote of the day') 
+
+print(random.choice(inspirational_quote)   
